@@ -1,0 +1,33 @@
+h1 {
+    color: black;
+    text-align: center;
+
+}
+
+.blog-title {
+    width: 80%;
+    box-shadow: 4px 4px 4px grey;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.blog-container {
+    width: 100%;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+.blog-title h5, .blog-title p{
+    margin-left: 4px;
+    
+}
+
+body{
+    background-color: rgb(235, 233, 233);
+}
+
+ a {
+    color: black;
+    text-decoration: none;
+}

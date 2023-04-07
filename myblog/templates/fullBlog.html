@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blog-item-container{
+            border-radius: 5px;
+            box-shadow: 4px 4px 4px grey;
+            padding: 5px;
+        }
+
+        .blog-item-title p:first-child{
+                font-size: 20px;
+                font-weight: bolder;
+        }
+        .blog-item-title p:nth-child(3){
+                font-size: 16px;
+                text-align: justify;
+        }
+
+    </style>
+</head>
+
+<body>
+    {% for item in blogs %}
+    <div class="blog-item-container">
+        <div class="blog-item-title">
+            <p>{{item.title}}</p>
+            <small>{{item.date_published}}</small>
+            <p>{{item.post_text}}</p>
+        </div>
+    </div>
+    {%endfor%}
+</body>
+</html>
